@@ -29,7 +29,7 @@ const Form = () => {
 
     try {
       const url = `http://localhost:8000/api/sendData?rows=${row}&columns=${column}`;
-      console.log(url, "url");
+      
       const response = await axios.post(url, {
         row,
         column,
